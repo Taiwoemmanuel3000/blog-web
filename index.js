@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/post', (req, res) => {
-    res.render('post.ejs')
+    res.render('partials/create-post.ejs')
 })
 
 app.post('/post', (req, res) => {
