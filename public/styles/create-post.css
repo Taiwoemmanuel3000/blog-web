@@ -1,0 +1,59 @@
+body {
+    background: #0f172a; /* dark tech background */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Center wrapper */
+.create-post-wrapper {
+    padding: 60px 15px;
+}
+
+/* Card styling */
+.create-post-card {
+    border: none;
+    border-radius: 15px;
+    background: #1e293b; /* dark card */
+    color: white;
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: #0f172a;
+    color: white;
+    border-color: #3b82f6;
+    box-shadow: none;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+/* Button */
+.btn-primary {
+    background: #3b82f6;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+/* Title */
+h2 {
+    font-weight: bold;
+    color: #f1f5f9;
+}
