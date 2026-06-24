@@ -1,0 +1,94 @@
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --primary:#3b82f6;
+    --text:#ffffff;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-navbar{
+    background: rgba(15,23,42,.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+
+.logo-circle{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#3b82f6,#06b6d4);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.logo-text{
+    font-size:1.4rem;
+    font-weight:700;
+    color:white;
+}
+
+.nav-link{
+    color:white !important;
+    margin:0 10px;
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#3b82f6;
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+.icon-btn{
+    border:none;
+    background:none;
+    font-size:1.2rem;
+    color:white;
+    cursor:pointer;
+}
+
+.icon-btn:hover{
+    transform:scale(1.1);
+}
+
+.btn-primary{
+    background:#3b82f6;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#2563eb;
+}
+
+/* Light Theme */
+
+.light-theme{
+    background:#f8fafc !important;
+    color:#1e293b !important;
+}
+
+.light-theme .custom-navbar{
+    background:white !important;
+}
+
+.light-theme .logo-text,
+.light-theme .nav-link,
+.light-theme .icon-btn{
+    color:#1e293b !important;
+}
