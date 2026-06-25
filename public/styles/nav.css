@@ -5,6 +5,42 @@
     --text:#ffffff;
 }
 
+/* the dropdown menu */
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: all 0.3s ease;
+
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back_color:hover{
+    background-color: var(--primary);
+    border-radius: 10%;
+}
+
+.list_container{
+    background-color: var(--bg);
+}
+
+.dropdown_text a{
+    color: var(--text);
+}
+
+/* ending of the dropdown menu code */
+
+
 body{
     font-family: 'Segoe UI', sans-serif;
 }
